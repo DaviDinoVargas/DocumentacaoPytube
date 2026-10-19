@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101719">
+  <meta name="description" content="Documentação técnica do DinoTube: arquitetura, domínio, downloads, biblioteca, player, temas, testes e instalação.">
+  <title>DinoTube — Documentação técnica</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/docs.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação da documentação">
+      <a class="brand" href="#visao-geral" aria-label="DinoTube documentação, início">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 10.5 20 4l13 6.5v19L20 36 7 29.5z"/><path d="M15 14.2v11.6l11-5.8z"/></svg></span>
+        <span><strong>DinoTube</strong><small>DOCUMENTAÇÃO TÉCNICA</small></span>
+      </a>
+      <div class="sidebar-meta"><span class="live-dot"></span> CÓDIGO-FONTE <span class="version">v1.0.0</span></div>
+      <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar nesta documentação" autocomplete="off" aria-label="Buscar nesta documentação"><kbd>⌘ K</kbd></label>
+      <nav id="nav" class="nav-list"></nav>
+      <div class="sidebar-bottom"><div class="source-chip"><span class="folder-icon">⌁</span><span><b>Projeto documentado</b><small>Python · PySide6 · Qt</small></span></div><button class="theme-toggle" id="theme-toggle" type="button"><span aria-hidden="true">◐</span><span>Tema de leitura</span><span class="toggle-state" id="theme-label">Escuro</span></button><p class="sidebar-note">Conteúdo baseado no código e no README do DinoTube.</p></div>
+    </aside>
+    <main id="main" class="main">
+      <header class="topbar"><button id="menu-toggle" class="menu-toggle" aria-label="Abrir navegação" aria-expanded="false">☰</button><div class="breadcrumbs"><span>Documentação</span><span class="crumb-sep">/</span><span id="crumb-current">Visão geral</span></div><div class="top-actions"><span class="source-status"><span class="live-dot"></span> DOCUMENTAÇÃO DO PROJETO</span><a class="repo-link" href="https://github.com" target="_blank" rel="noreferrer" aria-label="Abrir repositório GitHub do projeto (configure o link)" title="Configure o endereço do repositório no arquivo de conteúdo">↗</a></div></header>
+      <div class="reading-track"><span id="reading-progress"></span></div>
+      <div class="content-wrap"><div id="content" class="content"></div><footer class="footer"><span>DinoTube · documentação técnica</span><span>Feito para entender, instalar e manter.</span></footer></div>
+    </main>
+  </div>
+  <div id="scrim" class="scrim"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
